@@ -1,8 +1,27 @@
 ## HTTP Status Codes
+![python3.8](https://img.shields.io/badge/python-3.8-blue.svg)
+![TestCases](https://img.shields.io/badge/testcases-01-red.svg)
+
+### Table of Contents
+1. [Goal](#goal)
+2. [Description](#description)
+3. [Getting Started](#getting_started)
+	1. [Dependencies](#dependencies)
+	2. [File Structure](#file_structure)
+	3. [Installing](#installation)
+	4. [Instructions](#instructions)
+4. [License](#license)
+
+<a name="goal"></a>
+### Goal
 HTTP status codes are three-digit numbers returned by a server in response to a client's request. They provide information about the status of the requested resource or operation, and are typically used by web browsers and other clients to determine how to handle the response.
 
-### Categories
-HTTP status codes are grouped into five categories:
+
+
+### Description
+HTTP status codes are typically used by clients to determine how to handle the server's response. For example, a web browser might display a 404 Not Found error page if it receives that status code in response to a request for a web page. In addition, HTTP status codes can be used by servers to provide information about the status of an operation. For example, a server might return a 200 OK status code in response to a successful login request, or a 403 Forbidden status code in response to an unauthorized request to access a protected resource.
+
+HTTP status codes are grouped into five categories to provide feedback regarding the requests made by the client.
 
 **Informational responses (100-199):** These are interim responses that indicate that the client's request is being processed. They are not typically seen by users, as they are usually handled automatically by the client.
 
@@ -14,10 +33,46 @@ HTTP status codes are grouped into five categories:
 
 **Server error responses (500-599):** These indicate that there was an error on the server side. Common status codes in this category include 500 Internal Server Error, which indicates a generic server error, and 503 Service Unavailable, which indicates that the server is temporarily unable to handle the request.
 
-### Usage
-HTTP status codes are typically used by clients to determine how to handle the server's response. For example, a web browser might display a 404 Not Found error page if it receives that status code in response to a request for a web page.
+<a name="getting_started"></a>
+### Getting Started
 
-In addition, HTTP status codes can be used by servers to provide information about the status of an operation. For example, a server might return a 200 OK status code in response to a successful login request, or a 403 Forbidden status code in response to an unauthorized request to access a protected resource.
+<a name="dependencies"></a>
+#### Dependencies
+* Python 3.8
+* Standard set by the source https://httpwg.org.
+
+<a name="file_structure"></a>
+#### File Structure
+```
+httpcodes
+├── LICENSE
+├── README.md
+└── httpcodes
+    ├── __init__.py
+    ├── __version__.py
+    └── httpcodes.py
+```
+
+<a name="installation"></a>
+### Installing
+
+**httpcodes installation**
+```
+pip install httpcodes
+```
+
+**Clone the repository **
+```
+    > git clone git@github.com:Bell-Computer-Laboratories/ecourts_app.git
+    > cd ecourts_app
+    > ..
+```
+ 
+<a name="instructions"></a>
+#### Instructions
+* 1
+* 2
+* 3
 
 ### Resources
 For more information about HTTP status codes, see the HTTP/1.1 Status Code Definitions specification.
