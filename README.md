@@ -1,6 +1,4 @@
 ## HTTP Status Codes
-![python3.8](https://img.shields.io/badge/python-3.8-blue.svg)
-![TestCases](https://img.shields.io/badge/testcases-01-red.svg)
 
 ### Table of Contents
 1. [Goal](#goal)
@@ -104,13 +102,14 @@ $ python -m pip install requests
  '4xx client error – the request contains bad syntax or cannot be fulfilled',
  '5xx server error – the server failed to fulfil an apparently valid request']
 >>>
->>>httpcodes.is_successful_response(response_code)
+>>> httpcodes.is_successful_response(response_code)
 True
->>>httpcodes.is_client_error_response(response_code)
+>>> httpcodes.is_client_error_response(response_code)
 False
->>>httpcodes.is_server_error_response(response_code)
+>>> httpcodes.is_server_error_response(response_code)
 False
-
+>>> 
+>>>
 ```
 
 ### Resources
