@@ -1,3 +1,6 @@
+"""httpcodes dict,
+HTTP CODE Response collected
+"""
 httpcodes_dict = {100: {'code': 100,
                         'category': 'Information responses',
                         'short_description': '100 Continue',
@@ -264,3 +267,13 @@ def get_all_categories():
            '4xx client error – the request contains bad syntax or cannot be fulfilled',
            '5xx server error – the server failed to fulfil an apparently valid request']
 
+def is_successful_response(response_code):
+    return 200 <= response_code < 300
+
+def is_client_error_response(response_code):
+    return 400 <= response_code < 500
+
+def is_server_error_response(response_code):
+    return 500 <= response_code < 600
+
+print(is_server_error_response(500))
