@@ -57,10 +57,15 @@ httpcodes
 ### Installing
 
 **httpcodes installation**
-```
+
+```console
 pip install httpcodes
 ```
-
+- OR
+```console
+$ python -m pip install requests
+```
+- OR
 **Clone the repository **
 ```
     > git clone git@github.com:Bell-Computer-Laboratories/ecourts_app.git
@@ -70,7 +75,38 @@ pip install httpcodes
  
 <a name="instructions"></a>
 #### Instructions
-* 1
+```python
+
+>>> import httpcodes
+>>> 
+>>> response_code = 200
+>>> httpcodes.get_response_by_code(response_code)
+{'code': 200,
+ 'category': 'Successful responses',
+ 'short_description': '200 OK',
+ 'description': 'The request succeeded. The result meaning of "success" depends on the HTTP method:'}
+>>>
+>>> httpcodes.get_all_responses()
+'{100: {'code': 100,
+  'category': 'Information...'
+>>>
+>>> httpcodes.get_all_categories()
+['1xx informational response – the request was received, continuing process',
+ '2xx successful – the request was successfully received, understood, and accepted',
+ '3xx redirection – further action needs to be taken in order to complete the request',
+ '4xx client error – the request contains bad syntax or cannot be fulfilled',
+ '5xx server error – the server failed to fulfil an apparently valid request']
+>>>
+>>>httpcodes.is_successful_response(response_code)
+True
+>>>httpcodes.is_client_error_response(response_code)
+False
+>>>httpcodes.is_server_error_response(response_code)
+False
+
+```
+        
+print(fibonacci(10))
 * 2
 * 3
 
