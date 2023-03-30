@@ -40,18 +40,17 @@ HTTP status codes are grouped into five categories to provide feedback regarding
 <a name="file_structure"></a>
 #### File Structure
 ```
-httpcodes
+responsecodes
+|
 ├── LICENSE
 ├── README.md
-├── httpcodes
+├── responsecodes
 │   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── *
-│   │   └── *
 │   ├── __version__.py
-│   └── httpcodes.py
+│   └── responsecodes.py
+├── setup.py
 └── test
-    └── test_httpcodes.py
+    └── test_responsecodes.py
 ```
 
 <a name="installation"></a>
@@ -82,31 +81,31 @@ $ python -m pip install requests
 #### Instructions
 ```python
 
->>> import httpcodes
+>>> import responsecodes
 >>> 
 >>> response_code = 200
->>> httpcodes.get_response_by_code(response_code)
+>>> responsecodes.get_response_by_code(response_code)
 {'code': 200,
  'category': 'Successful responses',
  'short_description': '200 OK',
  'description': 'The request succeeded. The result meaning of "success" depends on the HTTP method:'}
 >>>
->>> httpcodes.get_all_responses()
+>>> responsecodes.get_all_responses()
 '{100: {'code': 100,
   'category': 'Information...'
 >>>
->>> httpcodes.get_all_categories()
+>>> responsecodes.get_all_categories()
 ['1xx informational response – the request was received, continuing process',
  '2xx successful – the request was successfully received, understood, and accepted',
  '3xx redirection – further action needs to be taken in order to complete the request',
  '4xx client error – the request contains bad syntax or cannot be fulfilled',
  '5xx server error – the server failed to fulfil an apparently valid request']
 >>>
->>> httpcodes.is_successful_response(response_code)
+>>> responsecodes.is_successful_response(response_code)
 True
->>> httpcodes.is_client_error_response(response_code)
+>>> responsecodes.is_client_error_response(response_code)
 False
->>> httpcodes.is_server_error_response(response_code)
+>>> responsecodes.is_server_error_response(response_code)
 False
 >>> 
 >>>
