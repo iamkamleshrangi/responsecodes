@@ -16,8 +16,6 @@
 ### Goal
 HTTP status codes are three-digit numbers returned by a server in response to a client's request. They provide information about the status of the requested resource or operation, and are typically used by web browsers and other clients to determine how to handle the response.
 
-
-
 ### Description
 HTTP status codes are typically used by clients to determine how to handle the server's response. For example, a web browser might display a 404 Not Found error page if it receives that status code in response to a request for a web page. In addition, HTTP status codes can be used by servers to provide information about the status of an operation. For example, a server might return a 200 OK status code in response to a successful login request, or a 403 Forbidden status code in response to an unauthorized request to access a protected resource.
 
@@ -62,12 +60,16 @@ httpcodes
 pip install httpcodes
 ```
 - OR
+
 ```console
 $ python -m pip install requests
 ```
+
 - OR
+
 **Clone the repository **
-```
+
+```console
     > git clone git@github.com:Bell-Computer-Laboratories/ecourts_app.git
     > cd ecourts_app
     > ..
@@ -105,10 +107,6 @@ False
 False
 
 ```
-        
-print(fibonacci(10))
-* 2
-* 3
 
 ### Resources
 For more information about HTTP status codes, see the HTTP/1.1 Status Code Definitions specification.
