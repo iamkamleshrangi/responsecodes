@@ -1,8 +1,8 @@
-from httpcodes.httpcodes import is_successful_response
-from httpcodes.httpcodes import is_client_error_response
-from httpcodes.httpcodes import is_server_error_response
-from httpcodes.httpcodes import get_response_by_code
-from httpcodes.httpcodes import get_all_categories
+from responsecodes.responsecodes import is_successful_response
+from responsecodes.responsecodes import is_client_error_response
+from responsecodes.responsecodes import is_server_error_response
+from responsecodes.responsecodes import get_response_by_code
+from responsecodes.responsecodes import get_all_categories
 
 def test_get_response_by_code():
     assert get_response_by_code(200)=={'code': 200,

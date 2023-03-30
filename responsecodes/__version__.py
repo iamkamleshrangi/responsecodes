@@ -1,4 +1,4 @@
-__title__ = 'httpcodes'
+__title__ = 'responsecodes'
 __description__='Hypertext Transfer Protocol (HTTP) response status codes for humans'
 __url__ = 'https://github.com/iamkamleshrangi/httpcodes'
 __version__ = '0.0.1'

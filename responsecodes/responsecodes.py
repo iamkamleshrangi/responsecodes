@@ -275,5 +275,3 @@ def is_client_error_response(response_code):
 
 def is_server_error_response(response_code):
     return 500 <= response_code < 600
-
-print(is_server_error_response(500))
