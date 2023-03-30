@@ -45,10 +45,15 @@ HTTP status codes are grouped into five categories to provide feedback regarding
 httpcodes
 ├── LICENSE
 ├── README.md
-└── httpcodes
-    ├── __init__.py
-    ├── __version__.py
-    └── httpcodes.py
+├── httpcodes
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── *
+│   │   └── *
+│   ├── __version__.py
+│   └── httpcodes.py
+└── test
+    └── test_httpcodes.py
 ```
 
 <a name="installation"></a>
