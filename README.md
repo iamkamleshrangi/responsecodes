@@ -64,7 +64,7 @@ pip install httpcodes
 - OR
 
 ```console
-$ python -m pip install requests
+$ python -m pip install httpcodes
 ```
 
 - OR
