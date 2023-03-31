@@ -72,7 +72,7 @@ $ python -m pip install requests
 **Clone the repository **
 
 ```console
-    > git clone git@github.com:Bell-Computer-Laboratories/ecourts_app.git
+    > git clone git@github.com:Bell-Computer-Laboratories/responsecodes.git
     > cd ecourts_app
     > ..
 ```
