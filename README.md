@@ -73,7 +73,7 @@ $ python -m pip install requests
 
 ```console
     > git clone git@github.com:iamkamleshrangi/responsecodes.git
-    > cd ecourts_app
+    > cd responsecodes 
     > ..
 ```
  
