@@ -59,12 +59,12 @@ responsecodes
 **httpcodes installation**
 
 ```console
-pip install httpcodes
+pip install responsecodes 
 ```
 - OR
 
 ```console
-$ python -m pip install httpcodes
+$ python -m pip install responsecodes
 ```
 
 - OR
